@@ -1,0 +1,54 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
+
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous">-->
+<!--</head>-->
+<!--<body>-->
+<!--<header th:insert="Sections/header :: myheader"></header>-->
+
+<!--<p th:text="'my login end password '+'Login '+${login}+' Password '+${password}"></p>-->
+<!--&lt;!&ndash; Footer &ndash;&gt;-->
+<!--<div th:insert="Sections/footer :: myfooter" ></div>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Adventures</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous">
+</head>
+
+<body>
+<header th:insert="Sections/header :: myheader"></header>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8">
+            <h1>Welcome to Travel Adventures</h1>
+            <p>Explore the world with us and share your travel stories!</p>
+            <p>Whether you're an experienced globetrotter or a first-time explorer, Travel Adventures is your guide to
+                discovering new destinations, experiencing cultures, and making unforgettable memories.</p>
+            <a href="/destinations" class="btn btn-primary">Explore Destinations</a>
+        </div>
+        <div class="col-md-4">
+            <img src="https://images.squarespace-cdn.com/content/v1/5b0eb59df793928fa7f488ff/1536780543743-TZT0SJMRKV5LUOOY8FS0/Industryyyy.jpg" alt="Travel" class="img-fluid rounded-circle">
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div th:insert="Sections/footer :: myfooter"></div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
